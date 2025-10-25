@@ -1,7 +1,11 @@
 package org.pdp.creational.factorymethod.product.impl;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.pdp.creational.factorymethod.product.Document;
 
+@Getter
+@Setter
 public class WordDocument extends BaseDocument implements Document {
     public WordDocument(String fileName) {
         super(fileName);

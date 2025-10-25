@@ -5,8 +5,18 @@ import org.pdp.creational.factorymethod.product.Document;
 import org.pdp.creational.factorymethod.product.impl.PdfDocument;
 
 public class PdfDocumentCreator implements DocumentCreator {
+
+    private PdfDocument pdfDocument;
+
     @Override
     public Document createFile(String fileName) {
-        return new PdfDocument(fileName);
+        if (pdfDocument == null) {
+            pdfDocument = new PdfDocument(fileName);
+            return pdfDocument;
+        }
+
+        pdfDocument.setFileName(fileName);
+
+        return pdfDocument;
     }
 }

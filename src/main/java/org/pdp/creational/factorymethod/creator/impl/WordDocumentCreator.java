@@ -5,8 +5,18 @@ import org.pdp.creational.factorymethod.product.Document;
 import org.pdp.creational.factorymethod.product.impl.WordDocument;
 
 public class WordDocumentCreator implements DocumentCreator {
+
+    private WordDocument wordDocument;
+
     @Override
     public Document createFile(String fileName) {
-        return new WordDocument(fileName);
+        if (wordDocument == null) {
+            wordDocument = new WordDocument(fileName);
+            return wordDocument;
+        }
+
+        wordDocument.setFileName(fileName);
+
+        return wordDocument;
     }
 }

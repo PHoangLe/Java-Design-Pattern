@@ -1,7 +1,11 @@
 package org.pdp.creational.factorymethod.product.impl;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.pdp.creational.factorymethod.product.Document;
 
+@Getter
+@Setter
 public class PdfDocument extends BaseDocument implements Document {
     public PdfDocument(String fileName) {
         super(fileName);
