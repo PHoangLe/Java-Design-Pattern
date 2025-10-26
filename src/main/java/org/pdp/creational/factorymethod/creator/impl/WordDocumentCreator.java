@@ -4,7 +4,7 @@ import org.pdp.creational.factorymethod.creator.DocumentCreator;
 import org.pdp.creational.factorymethod.product.Document;
 import org.pdp.creational.factorymethod.product.impl.WordDocument;
 
-public class WordDocumentCreator implements DocumentCreator {
+public class WordDocumentCreator extends DocumentCreator {
 
     private WordDocument wordDocument;
 

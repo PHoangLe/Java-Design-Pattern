@@ -4,7 +4,7 @@ import org.pdp.creational.factorymethod.creator.DocumentCreator;
 import org.pdp.creational.factorymethod.product.Document;
 import org.pdp.creational.factorymethod.product.impl.PdfDocument;
 
-public class PdfDocumentCreator implements DocumentCreator {
+public class PdfDocumentCreator extends DocumentCreator {
 
     private PdfDocument pdfDocument;
 

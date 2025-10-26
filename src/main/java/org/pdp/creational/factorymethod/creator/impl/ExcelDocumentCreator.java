@@ -4,7 +4,7 @@ import org.pdp.creational.factorymethod.creator.DocumentCreator;
 import org.pdp.creational.factorymethod.product.Document;
 import org.pdp.creational.factorymethod.product.impl.ExcelDocument;
 
-public class ExcelDocumentCreator implements DocumentCreator {
+public class ExcelDocumentCreator extends DocumentCreator {
 
     private ExcelDocument excelDocument;
 
