@@ -7,9 +7,9 @@ import org.pdp.creational.factorymethod.creator.impl.WordDocumentCreator;
 public class DemoFactoryMethod {
     public static void main(String[] args) {
         DocumentCreator creator = new PdfDocumentCreator();
-        creator.doSomthing("pdfFile");
+        creator.doSomething("pdfFile");
 
         creator = new WordDocumentCreator();
-        creator.doSomthing("wordFile");
+        creator.doSomething("wordFile");
     }
 }

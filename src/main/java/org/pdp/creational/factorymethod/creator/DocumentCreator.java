@@ -5,7 +5,7 @@ import org.pdp.creational.factorymethod.product.Document;
 public abstract class DocumentCreator {
     public abstract Document createFile(String fileName);
 
-    public void doSomthing(String fileName) {
+    public void doSomething(String fileName) {
         Document doc = createFile(fileName);
         doc.open();
         doSomethingWithFile(fileName);
