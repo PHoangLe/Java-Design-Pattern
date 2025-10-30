@@ -9,10 +9,10 @@ import org.pdp.creational.factorymethod.product.Document;
 public class DemoFactoryMethod {
     public static void main(String[] args) {
         DocumentCreator creator = new PdfDocumentCreator();
-        creator.doSomething("pdfFile");
+        creator.initDocument("pdfFile");
 
         creator = new WordDocumentCreator();
-        creator.doSomething("wordFile");
+        creator.initDocument("wordFile");
 
         ParameterizedFactory factory = new ParameterizedFactory();
         Document document = factory.createDocument("abc.pdf");
